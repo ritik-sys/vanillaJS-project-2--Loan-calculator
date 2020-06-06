@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h3 class="display-5 pb-4">LOAN CALCULATOR <i class="las la-calculator"></i></h3>
+                    <form class="loan-form">
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="loan-amount">$</span>
+                            <input type="number" class="form-control" id="amount" placeholder="Loan Amount" aria-describedby="loan-amount">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="loan-form">
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" >%</span>
+                            <input type="number" class="form-control" id="interest" placeholder="Interest" aria-describedby="interest">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="loan-form">
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                            <input type="number" class="form-control" id="years" placeholder="Years To Repay" aria-describedby="interest">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="loan-form">
+                        <div class="btn btn-dark btn-block" id="calculate" value="Calculate">CALCULATE</div>
+                    </form>
+                    <!-- loader -->
+                    <div id="loading" class="mt-2 pt-2" style="display: none;">
+                        <img src="25.gif">
+                    </div>
+                    <div class="results mt-4">
+                        <form class="loan-form">
+                            <div class="form-group">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="loan-amount">Monthly Payment</span>
+                                <input type="number" class="form-control" id="monthly-payment" aria-describedby="loan-amount" disabled>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="loan-form">
+                            <div class="form-group">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="loan-amount">Total Payment</span>
+                                <input type="number" class="form-control" id="total-payment" aria-describedby="loan-amount" disabled>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="loan-form">
+                            <div class="form-group">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="loan-amount">Total Interest</span>
+                                <input type="number" class="form-control" id="total-interest" aria-describedby="loan-amount" disabled>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
